@@ -148,5 +148,24 @@ img {
         opacity: 0.7;
         letter-spacing: 2px;
         font-size: 0.9rem;
+    }
+
+    .intro h1{
+        font-size: 1.8rem;
+    }
+
+    .intro h4{
+        font-size: 1.2rem;
+    }
+
+    .intropara{
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        letter-spacing: 1px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        display: inline-block;
       }
 }
