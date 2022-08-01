@@ -69,5 +69,11 @@ $(".5").on("click",function(){
     $(".5").addClass("active");
 });
 
+const typeWriter = document.getElementById('type-text');
+const text = 'Clubs';
+
+typeWriter.innerHTML = text;
+typeWriter.style.setProperty('--characters', text.length);
+
 
 

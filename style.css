@@ -48,12 +48,7 @@ body {
 #title {
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
-      to left,
-      rgba(4, 9, 30, 0.7),
-      rgba(4, 9, 30, 0.7)
-    ),
-    url("images/5.jpg");
+  background-image: linear-gradient(to left,rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url("images/5.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -163,6 +158,14 @@ img {
   padding: 5% 17%;
 }
 
+#clubs{
+  width: 100%;
+  background-color: #c13330;
+  padding: 5% 17%;
+  background-image: url("images/t4.png");
+  background-repeat: no-repeat;
+}
+
 #interests h1 {
   font-weight: bold;
   color: #c13330;
@@ -180,6 +183,7 @@ img {
   width: 300px;
   height: 270px;
 }
+
 
 @media (max-width: 990px) {
   .intropara {
@@ -213,7 +217,7 @@ img {
   }
 
   #interests h1 {
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     font-size: 1.8rem;
     display: block;
     position: static;
@@ -221,14 +225,23 @@ img {
   }
 
   img {
-    width: 170px;
-    height: 150px;
+    width: 220px;
+    height: 200px;
   }
 
-  #interests {
+  #interests ,#clubs {
     padding: 5% 7%;
   }
 
+  #clubs div.card-pad.col-lg-6{
+    padding: 0%;
+  }
+
+  #clubs h3{
+    font-weight: bold;
+    color: #c13330;
+    font-size: 1.5rem;
+  }
 }
 
 .int1,
@@ -239,7 +252,61 @@ img {
   display: inline;
 }
 
-.active {
+#interests .active {
   background-color: #c13330 !important;
   border: 0px solid #fff;
 }
+
+/* typewriter effect */
+.type-effect {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.type-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size:2rem;
+  color: #fff;
+}
+
+.type-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+  font-size:2rem;
+  color: #fff;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+/* .................. */
+
+#clubs h3{
+  font-weight: bold;
+  color: #c13330;
+  font-size: 1.8rem;
+}
+
+
