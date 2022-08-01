@@ -53,7 +53,6 @@ body {
   background-size: cover;
   position: relative;
   padding: 3% 15%;
-  position: relative;
 }
 
 /* intro */
@@ -83,8 +82,6 @@ body {
 
 .intro {
   text-align: right;
-  /* margin: 10% 0% 5% 0%; */
-  
   transform: translate(0%,0%);
   
 }
@@ -115,15 +112,36 @@ body {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-    border: 1px solid #de4d2c;
+    border: 1px solid #c13330;
     padding :12px  34px;
     font-size: 13px;
-    background-color: #de4d2c;
+    background-color: #c13330;
     position: relative;
     cursor: pointer;
     margin: 1.5% 0%;
     transition: 0.4s;
 
+}
+
+.int{
+    display: inline-block;
+    text-decoration: none;
+    color: #c13330;
+}
+
+.int:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #c13330;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card{
+    border-radius: 0%;
+    margin : auto;
+    z-index: 1;
 }
 
 img {
@@ -132,13 +150,32 @@ img {
   margin: 0 auto;
 }
 
-#about {
+#interests {
   min-height: 400px;
   width: 100%;
   background-color: #ffffff;
+  padding: 5% 17%;
 }
 
-@media(max-width:800px){
+#interests h1{
+  font-weight: bold;
+  color: #c13330;
+  /* padding-bottom: 35px; */
+  
+  margin: 6% 4%;
+  display: inline;
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 1;
+  right: 3%;
+}
+
+img{
+    width: 300px;
+    height: 270px;
+}
+
+@media(max-width:990px){
     .intropara{
         width: 60%;
     }
@@ -168,4 +205,22 @@ img {
         font-weight: bold;
         display: inline-block;
       }
+
+      #interests h1{
+         padding-bottom: 35px; 
+        
+        display: block;
+        position: static;
+        transform: rotate(0deg);
+      }
 }
+
+.int1,.int2,.int3,.int4,.int5{
+  display: inline;
+}
+
+.active{
+    background-color:#c13330 !important;
+    border: 0px solid #fff;
+}
+
