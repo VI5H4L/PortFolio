@@ -1,15 +1,15 @@
-$(".int2").hide(1000);
-$(".int3").hide(1000);
-$(".int4").hide(1000);
-$(".int5").hide(1000);
-$(".int1").show(1000);
-
 $(".1").on("click",function(){
-    $(".int2").hide(1000);
-    $(".int3").hide(1000);
-    $(".int4").hide(1000);
-    $(".int5").hide(1000);
-    $(".int1").show(1000);
+    $(".int1").addClass("hidden");
+    setTimeout(() => {
+        
+        $(".int1").attr("src","images/i1.png");
+        
+    }, 200);
+    setTimeout(() => {
+        
+        $(".int1").removeClass("hidden");
+        
+    }, 200);
     $(".2").removeClass("active");
     $(".3").removeClass("active");
     $(".4").removeClass("active");
@@ -18,11 +18,19 @@ $(".1").on("click",function(){
 });
 
 $(".2").on("click",function(){
-    $(".int1").hide(1000);
-    $(".int3").hide(1000);
-    $(".int4").hide(1000);
-    $(".int5").hide(1000);
-    $(".int2").show(1000);
+    $(".int1").addClass("hidden");
+    setTimeout(() => {
+        
+        $(".int1").attr("src","images/i2.png");
+        
+    }, 200);
+    
+    setTimeout(() => {
+        
+        $(".int1").removeClass("hidden");
+        
+    }, 200);
+    //$(".int1").addClass("nonhidden");
     $(".1").removeClass("active");
     $(".3").removeClass("active");
     $(".4").removeClass("active");
@@ -31,11 +39,17 @@ $(".2").on("click",function(){
 });
 
 $(".3").on("click",function(){
-    $(".int2").hide(1000);
-    $(".int1").hide(1000);
-    $(".int4").hide(1000);
-    $(".int5").hide(1000);
-    $(".int3").show(1000);
+    $(".int1").addClass("hidden");
+    setTimeout(() => {
+        
+        $(".int1").attr("src","images/i3.png");
+        
+    }, 200);
+    setTimeout(() => {
+        
+        $(".int1").removeClass("hidden");
+        
+    }, 200);
     $(".2").removeClass("active");
     $(".1").removeClass("active");
     $(".4").removeClass("active");
@@ -44,11 +58,17 @@ $(".3").on("click",function(){
 });
 
 $(".4").on("click",function(){
-    $(".int2").hide(1000);
-    $(".int3").hide(1000);
-    $(".int1").hide(1000);
-    $(".int5").hide(1000);
-    $(".int4").show(1000);
+    $(".int1").addClass("hidden");
+    setTimeout(() => {
+        
+        $(".int1").attr("src","images/i4.png");
+        
+    }, 200);
+    setTimeout(() => {
+        
+        $(".int1").removeClass("hidden");
+        
+    }, 200);
     $(".2").removeClass("active");
     $(".3").removeClass("active");
     $(".1").removeClass("active");
@@ -57,11 +77,17 @@ $(".4").on("click",function(){
 });
 
 $(".5").on("click",function(){
-    $(".int2").hide(1000);
-    $(".int3").hide(1000);
-    $(".int4").hide(1000);
-    $(".int1").hide(1000);
-    $(".int5").show(1000);
+    $(".int1").addClass("hidden");
+    setTimeout(() => {
+        
+        $(".int1").attr("src","images/i5.png");
+        
+    }, 200);
+    setTimeout(() => {
+        
+        $(".int1").removeClass("hidden");
+        
+    }, 200);
     $(".2").removeClass("active");
     $(".3").removeClass("active");
     $(".4").removeClass("active");
@@ -74,6 +100,8 @@ const text = 'Clubs';
 
 typeWriter.innerHTML = text;
 typeWriter.style.setProperty('--characters', text.length);
+
+
 
 
 
