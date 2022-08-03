@@ -41,6 +41,11 @@ body {
   opacity: 0.7;
   letter-spacing: 2px;
   font-size: 1.9rem;
+  transition: all 0.7s ease-in-out 0.01s;
+}
+
+.side:hover{
+  opacity: 1;
 }
 
 .navbar {
@@ -275,13 +280,23 @@ img {
   color: #fff;
 }
 
+.text{
+  margin-bottom: 14%;
+}
+
 .type-effect > .text {
   max-width: 0;
-  animation: typing 3s steps(var(--characters)) infinite;
+  /* animation: typing 3s steps(var(--characters)) 1;
+  animation-fill-mode: forwards;   */
   white-space: nowrap;
   overflow: hidden;
   font-size:2rem;
   color: #fff;
+}
+
+.text.onScroll{
+  animation: typing 3s steps(var(--characters)) 1;
+  animation-fill-mode: forwards;  
 }
 
 .type-effect:after {
@@ -465,12 +480,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid #7c7878;
-  
-  /* -webkit-animation: increase0 2s;
-  -moz-animation:    increase0 2s; 
-  -o-animation:      increase0 2s; 
-  animation:         increase0 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga0.onScroll{
@@ -493,12 +502,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase1 2s;
-  -moz-animation:    increase1 2s; 
-  -o-animation:      increase1 2s; 
-  animation:         increase1 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga1.onScroll{
@@ -520,12 +523,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase2 2s;
-  -moz-animation:    increase2 2s; 
-  -o-animation:      increase2 2s; 
-  animation:         increase2 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga2.onScroll{
@@ -547,12 +544,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase3 2s;
-  -moz-animation:    increase3 2s; 
-  -o-animation:      increase3 2s; 
-  animation:         increase3 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga3.onScroll{
@@ -575,12 +566,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase4 2s;
-  -moz-animation:    increase4 2s; 
-  -o-animation:      increase4 2s; 
-  animation:         increase4 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga4.onScroll{
@@ -602,12 +587,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase5 2s;
-  -moz-animation:    increase5 2s; 
-  -o-animation:      increase5 2s; 
-  animation:         increase5 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga5.onScroll{
@@ -630,12 +609,6 @@ a.btn.social-icon.button{
   height:0px;
   width:1px;
   border-bottom:8px solid var(--pcolor);
-  
-  /* -webkit-animation: increase6 2s;
-  -moz-animation:    increase6 2s; 
-  -o-animation:      increase6 2s; 
-  animation:         increase6 2s; 
-  animation-fill-mode: forwards; */
 }
 
 .ga6.onScroll{
@@ -651,6 +624,21 @@ a.btn.social-icon.button{
      100% {
         width: 80%;
     } 
+}
+
+.centint{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler {
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0px solid transparent;
+  /* border-radius: 0.25rem; */
 }
 
 @media (max-width: 991px) {
@@ -766,6 +754,10 @@ a.btn.social-icon.button{
 
   .skillpre{
     width: 5%;
+  }
+
+  .text{
+    margin-bottom: 5%;
   }
 
 }

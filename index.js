@@ -177,4 +177,11 @@ $(window).scroll(function(){
     }
 });
 
+$(window).scroll(function(){
+    var wh = $(window).height()-20;
+      if($(window).scrollTop() > $('.text').offset().top-wh){
+        $('.text').addClass('onScroll');
+    }
+});
+
 
