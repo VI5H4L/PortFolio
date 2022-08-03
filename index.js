@@ -1,3 +1,14 @@
+setTimeout(() => {
+        
+    $(".loading").css("opacity","0");
+    
+}, 10);
+setTimeout(() => {
+        
+    $(".loading").css("z-index","-1");
+    
+}, 1500);
+
 $(".1").on("click",function(){
     $(".int1").addClass("hidden");
     setTimeout(() => {

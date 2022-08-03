@@ -431,3 +431,28 @@ a.btn.social-icon.button{
 
 /* set button(top and bottom of the scrollbar) */
 .scrollbar::-webkit-scrollbar-button {display:none}
+
+
+
+/* ***************** */
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-color: #202020;
+  z-index: 2;
+  transition: all 2s ease-in-out .3s;
+}
+
+.loading-image {
+  z-index: 100;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+}
