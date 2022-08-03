@@ -243,7 +243,7 @@ img {
   background: linear-gradient(45deg, rgb(63,74,47), rgb(123, 161, 66));
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   .intro h3 {
     width: 74%;
   }
