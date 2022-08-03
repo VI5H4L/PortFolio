@@ -466,6 +466,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid #7c7878;
   
+  /* -webkit-animation: increase0 2s;
+  -moz-animation:    increase0 2s; 
+  -o-animation:      increase0 2s; 
+  animation:         increase0 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga0.onScroll{
   -webkit-animation: increase0 2s;
   -moz-animation:    increase0 2s; 
   -o-animation:      increase0 2s; 
@@ -486,6 +494,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase1 2s;
+  -moz-animation:    increase1 2s; 
+  -o-animation:      increase1 2s; 
+  animation:         increase1 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga1.onScroll{
   -webkit-animation: increase1 2s;
   -moz-animation:    increase1 2s; 
   -o-animation:      increase1 2s; 
@@ -505,6 +521,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase2 2s;
+  -moz-animation:    increase2 2s; 
+  -o-animation:      increase2 2s; 
+  animation:         increase2 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga2.onScroll{
   -webkit-animation: increase2 2s;
   -moz-animation:    increase2 2s; 
   -o-animation:      increase2 2s; 
@@ -524,6 +548,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase3 2s;
+  -moz-animation:    increase3 2s; 
+  -o-animation:      increase3 2s; 
+  animation:         increase3 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga3.onScroll{
   -webkit-animation: increase3 2s;
   -moz-animation:    increase3 2s; 
   -o-animation:      increase3 2s; 
@@ -544,6 +576,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase4 2s;
+  -moz-animation:    increase4 2s; 
+  -o-animation:      increase4 2s; 
+  animation:         increase4 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga4.onScroll{
   -webkit-animation: increase4 2s;
   -moz-animation:    increase4 2s; 
   -o-animation:      increase4 2s; 
@@ -563,6 +603,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase5 2s;
+  -moz-animation:    increase5 2s; 
+  -o-animation:      increase5 2s; 
+  animation:         increase5 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga5.onScroll{
   -webkit-animation: increase5 2s;
   -moz-animation:    increase5 2s; 
   -o-animation:      increase5 2s; 
@@ -583,6 +631,14 @@ a.btn.social-icon.button{
   width:1px;
   border-bottom:8px solid var(--pcolor);
   
+  /* -webkit-animation: increase6 2s;
+  -moz-animation:    increase6 2s; 
+  -o-animation:      increase6 2s; 
+  animation:         increase6 2s; 
+  animation-fill-mode: forwards; */
+}
+
+.ga6.onScroll{
   -webkit-animation: increase6 2s;
   -moz-animation:    increase6 2s; 
   -o-animation:      increase6 2s; 
