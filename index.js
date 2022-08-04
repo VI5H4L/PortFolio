@@ -2,12 +2,12 @@ setTimeout(() => {
         
     $(".loading").css("opacity","0");
     
-}, 10);
+}, 1);
 setTimeout(() => {
         
     $(".loading").css("z-index","-1");
     
-}, 1500);
+}, 1);
 
 $(".pl1").on("click",function () {
     $("#title").css("background-image","linear-gradient(to left,rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('images/5.jpg')");

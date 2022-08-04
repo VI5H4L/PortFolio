@@ -2,6 +2,10 @@
   --pcolor: #2A1537;
 }
 
+*{
+  transition: all 0.7s ease-in-out 0.01s;
+}
+
 html{
   scroll-behavior: smooth;
 }
