@@ -186,11 +186,21 @@ img {
 
 #footer {
   width: 100%;
-  background-color: var(--pcolor);
+  background-color: #fff;
   padding: 25px 8%;
 }
 
 #clubs{
+  width: 100%;
+  background-color: var(--pcolor);
+  padding: 5% 15%;
+  background-image:url("images/Skills1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#education{
   width: 100%;
   background-color: var(--pcolor);
   padding: 5% 15%;
@@ -208,6 +218,7 @@ img {
 }
 
 #interests h1 {
+  font-size: 1.7rem;
   font-weight: bold;
   background-color: var(--pcolor);
   color: #ffffff;
@@ -342,12 +353,12 @@ img {
 
 #footer h3{
   font-weight: bold;
-  color: #fff;
+  color: var(--pcolor);
   font-size: 1rem;
 }
 
 #footer h6{
-  padding: 0 ; font-size: 10px; margin-bottom: 0; margin-top: 2px; font-weight: bold; color: #fff; letter-spacing: 2px;
+  padding: 0 ; font-size: 10px; margin-bottom: 0; margin-top: 2px; font-weight: bold; color: var(--pcolor); letter-spacing: 2px;
 }
 
 .clubimg{
@@ -647,6 +658,100 @@ a.btn.social-icon.button{
   /* border-radius: 0.25rem; */
 }
 
+.edu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edufirst{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edusecond{
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.edusecond .card1 {
+    position: relative;
+    padding: 0;
+    margin: 0 20px; 
+    border-radius: 5%;
+    border: 3px solid rgb(255, 255, 255);
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-image:url("images/sgn.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 1;
+}
+
+.edusecond .card2 {
+  background-image:url("images/lnm1.jpg");
+}
+
+.edusecond .card1 .card-content {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: -100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.264);
+    backdrop-filter: blur(12px);
+    height: 100%;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    z-index: 2;
+}
+
+.edusecond .card1:hover .card-content {
+    bottom: 0.5px;
+}
+
+.edusecond .card1:hover .card-content .h5 {
+    opacity: 1;
+}
+
+.edusecond .card1 .card-content .h5 {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 500;
+    opacity: 0;
+    transition-delay: 0.2s;
+    margin: auto;
+}
+
+.eduh1{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: var(--pcolor);
+  padding: 7px 20px;
+  display: block;
+  width: max-content;
+  transform: rotate(-90deg);
+}
+
+.p1{
+  font-size:16px ; font-weight: bold;
+}
+
+.p2{
+  font-size:13px;  letter-spacing: 1px ;
+}
+
 @media (max-width: 991px) {
   .intro h3 {
     width: 74%;
@@ -690,7 +795,7 @@ a.btn.social-icon.button{
   }
 
   #interests h1 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin-bottom: 0;
     transform: rotate(0deg);
   }
@@ -705,6 +810,10 @@ a.btn.social-icon.button{
   }
 
   #clubs {
+    padding: 5% 7%;
+  }
+
+  #education {
     padding: 5% 7%;
   }
 
@@ -771,6 +880,39 @@ a.btn.social-icon.button{
     background-color: #00000080 ;
   }
 
+  .edu{
+    flex-direction: column;
+  }
+
+  .eduh1{
+    transform: rotate(0deg);
+    margin-bottom: 30px;
+  }
+
+  .edusecond{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .edusecond .card1{
+    height: 150px;
+    margin: 0px 5px;
+  }
+
+  .p1{
+    font-size:11px ; 
+  }
+  
+  .p2{
+    font-size:9px; 
+  }
+
+  .eduh1{
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 768px){

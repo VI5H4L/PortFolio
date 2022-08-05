@@ -121,12 +121,15 @@ $(".5").on("click",function(){
     $(".5").addClass("active");
 });
 
+$("li.nav-item").on("click",function(){
+    $("div#navbarTogglerDemo02.navbar-collapse.ms-4.navi.collapse").removeClass("show");
+});
+
 const typeWriter = document.getElementById('type-text');
 const text = 'Clubs';
 
 typeWriter.innerHTML = text;
 typeWriter.style.setProperty('--characters', text.length);
-
 
 $(window).scroll(function(){
     var wh = $(window).height()-25;
@@ -183,5 +186,3 @@ $(window).scroll(function(){
         $('.text').addClass('onScroll');
     }
 });
-
-
