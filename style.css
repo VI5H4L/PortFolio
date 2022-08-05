@@ -904,6 +904,12 @@ a.btn.social-icon.button{
   }
 }
 
+@media (max-height : 530px){
+  #title{
+    height:550px;
+  }
+}
+
 @media (max-width: 480px){
 
   .edusecond .card1{
