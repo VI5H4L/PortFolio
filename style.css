@@ -1,5 +1,7 @@
 :root{
   --pcolor: #2A1537;
+  --surface-color: #fff;
+  --curve: 40;
 }
 
 *{
@@ -186,8 +188,12 @@ img {
 
 #footer {
   width: 100%;
-  background-color: #fff;
+  background-color: var(--pcolor);
   padding: 25px 8%;
+  background-image:url("images/Skills1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #clubs{
@@ -208,6 +214,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+#projects{
+  width: 100%;
+  background-color: #fff;
+  padding: 5% 15%;
 }
 
 #skills{
@@ -353,12 +365,12 @@ img {
 
 #footer h3{
   font-weight: bold;
-  color: var(--pcolor);
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1rem; 
 }
 
 #footer h6{
-  padding: 0 ; font-size: 10px; margin-bottom: 0; margin-top: 2px; font-weight: bold; color: var(--pcolor); letter-spacing: 2px;
+  padding: 0 ; font-size: 10px; margin-bottom: 0; margin-top: 2px; font-weight: bold; color: #fff; letter-spacing: 2px;
 }
 
 .social-icon .fa { text-align: center; display: table-cell; vertical-align: middle; width: 25px; height: 25px !important; line-height: 1; font-size: 14px; -webkit-transition: all 0.4s ease; transition: all 0.4s ease; color: #fff; background: none; }
@@ -653,6 +665,26 @@ a.btn.social-icon.button{
   /* border-radius: 0.25rem; */
 }
 
+.pro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profirst{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.prosecond{
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .edu{
   display: flex;
   justify-content: center;
@@ -739,6 +771,19 @@ a.btn.social-icon.button{
   transform: rotate(-90deg);
 }
 
+.proh1{
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--pcolor);
+  color: #fff;
+  padding: 7px 20px;
+  margin: 10px;
+  display: block;
+  width: max-content;
+  transform: rotate(90deg);
+}
+
+
 .p1{
   font-size:16px ; font-weight: bold;
   margin: 5px;
@@ -755,6 +800,112 @@ a.btn.social-icon.button{
   height: 180px;
   margin-bottom: 5px;
 } 
+
+
+.card3 {
+  position: relative;
+  display: flex;
+  margin: 0 10px;
+  height: 270px;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0px 0px 9px -1px var(--pcolor);
+}
+
+.card__image {      
+  width: 250px;
+  height: auto;
+  
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card3:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1.25em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card3:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 35px;
+  height: 35px;      
+  border-radius: 50%;  
+  margin: 0px 5px;    
+}
+
+.card__title {
+  font-size: 1.2em;
+  margin: 0;
+  
+  color: var(--pcolor);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1.25em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--pcolor);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
 
 @media (max-width: 991px) {
   .intro h3 {
@@ -818,6 +969,10 @@ a.btn.social-icon.button{
   }
 
   #education {
+    padding: 7% 7%;
+  }
+
+  #projects {
     padding: 7% 7%;
   }
 
@@ -902,6 +1057,22 @@ a.btn.social-icon.button{
     height: 135px;
     margin-bottom: 10px;
   }
+
+  .pro{
+    flex-direction: column-reverse;
+  }
+
+  .proh1{
+    transform: rotate(0deg);
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .profirst{
+    width: 100%;
+    /* justify-content: center; */
+  }
+
 }
 
 @media (max-height : 530px){
@@ -927,6 +1098,55 @@ a.btn.social-icon.button{
 
   .eduh1{
     margin-bottom: 27px;
+  }
+
+  .proh1{
+    margin-bottom: 27px;
+  }
+
+  .card3{
+    margin: 0 7px;
+    height: 190px;
+  }
+
+  .card__thumb {
+    width: 25px;
+    height: 25px;      
+    border-radius: 50%;  
+    margin: 2px 0px;    
+  }
+  
+  .card__title {
+    font-size: 0.8em;
+    margin: 0;
+    
+    color: var(--pcolor);
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  
+.card__header {
+  padding: 1.25em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+  
+  .card__description {
+    font-size: 0.5rem;
+    color: var(--pcolor);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }    
+
+  .card__image {      
+    width: 160px;
+    height: auto;
+    
   }
 }
 
