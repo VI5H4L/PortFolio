@@ -131,7 +131,7 @@ body {
   background: transparent;
   position: relative;
   cursor: pointer;
-  margin: 1.5% 0%;
+  margin: 2% 0%;
 }
 
 .titlebtn:hover {
@@ -883,19 +883,6 @@ a.btn.social-icon.button{
   letter-spacing: 2px;
 }
 
-.card__header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2em;
-  padding: 1.25em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;    
-  background-color: var(--surface-color);
-  transform: translateY(-100%);
-  transition: .2s ease-in-out;
-}
-
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
@@ -1117,12 +1104,17 @@ a.btn.social-icon.button{
   }
   
   .card__title {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 0;
     
     color: var(--pcolor);
     font-weight: bold;
     letter-spacing: 2px;
+  }
+
+  .pr1{
+    position: relative;
+    right: 11px;
   }
 
   
