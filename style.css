@@ -892,6 +892,7 @@ a.btn.social-icon.button{
   font-size: 0.8rem;
   color: var(--pcolor);
   display: -webkit-box;
+  font-weight: bold;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
