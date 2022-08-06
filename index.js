@@ -11,7 +11,7 @@ setTimeout(() => {
 
 $(".pl1").on("click",function () {
     $("#title").css("background-image","linear-gradient(to left,rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('images/5.jpg')");
-    $(":root").css("--pcolor","#c13330");
+    $(":root").css("--pcolor","#851d1b");
 })
 
 $(".pl2").on("click",function () {
@@ -21,7 +21,12 @@ $(".pl2").on("click",function () {
 
 $(".pl3").on("click",function () {
     $("#title").css("background-image","linear-gradient(to left,rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('images/4.jpg')");
-    $(":root").css("--pcolor","#3F4A2F");
+    $(":root").css("--pcolor","#323826");
+})
+
+$(".pl4").on("click",function () {
+    $("#title").css("background-image","linear-gradient(to left,rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url('images/7.jpg')");
+    $(":root").css("--pcolor","#02243f");
 })
 
 $(".1").on("click",function(){

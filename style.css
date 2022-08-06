@@ -1,5 +1,5 @@
 :root{
-  --pcolor: #2A1537;
+  --pcolor:  #02243f;
   --surface-color: #fff;
   --curve: 40;
 }
@@ -144,7 +144,6 @@ body {
   background-color: var(--pcolor);
   position: relative;
   cursor: pointer;
-  margin: 1.5% 0%;
   transition: 0.4s;
 }
 
@@ -272,7 +271,7 @@ img {
 }
 
 .pl1{
-  background: linear-gradient(45deg, rgb(193, 51, 48), rgb(255, 141, 141));
+  background: linear-gradient(45deg, rgb(133,29,27), rgb(240, 122, 120));
 }
 
 .pl2{
@@ -280,7 +279,11 @@ img {
 }
 
 .pl3{
-  background: linear-gradient(45deg, rgb(63,74,47), rgb(123, 161, 66));
+  background: linear-gradient(45deg, rgb(50,56,38), rgb(140, 157, 105));
+}
+
+.pl4{
+  background: linear-gradient(45deg, rgb(2,36,63), rgb(3, 92, 165));
 }
 
 .int1{
@@ -990,6 +993,8 @@ a.btn.social-icon.button{
     width: 20px;
     height: 20px;
     margin: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   #skills{
@@ -1060,6 +1065,19 @@ a.btn.social-icon.button{
     /* justify-content: center; */
   }
 
+  .titlebtn{
+    margin: 2.6% 0%;
+  }
+
+  .card3{
+    margin: 0 7px;
+    height: 230px;
+  }
+  .card__image {      
+    width: 230px;
+    height: auto;
+    
+  }
 }
 
 @media (max-height : 530px){
@@ -1093,7 +1111,7 @@ a.btn.social-icon.button{
 
   .card3{
     margin: 0 7px;
-    height: 190px;
+    height: 150px;
   }
 
   .card__thumb {
