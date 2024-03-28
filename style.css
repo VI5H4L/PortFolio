@@ -91,6 +91,7 @@ body {
 
 .intro h3 {
   display: inline-block;
+  white-space: nowrap;
   width: 35%;
   color: #ffffff;
   font-size: 1rem;
@@ -676,6 +677,8 @@ a.btn.social-icon.button{
 
 .profirst{
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
   width: 80%;
   justify-content: space-around;
   align-items: center;
@@ -909,7 +912,7 @@ a.btn.social-icon.button{
   }
 
   .centered {
-    left: 55%;
+    /* left: 55%; */
     width: 70%;
   }
 
@@ -1084,6 +1087,12 @@ a.btn.social-icon.button{
 @media (max-height : 530px){
   #title{
     height:550px;
+  }
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 
